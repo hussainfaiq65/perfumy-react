@@ -1,0 +1,116 @@
+/* Step 6: Create universal tag and set margin to 0, padding to 0 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding and borders don't affect element's overall size */
+}
+
+/* Step 7: Select nav tag and provide the necessary styling */
+nav {
+  background-color: black;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between; /* Aligns items (h1 and ul) properly */
+  align-items: center;
+}
+
+/* Step 8: Select li and h1 tag and fix the display property */
+li, h1 {
+  display: inline;
+}
+
+/* Step 9: Select ul tag and fix the display property and move the list to left */
+ul {
+  display: flex; /* Use flex for better control */
+  list-style: none; /* Removes default bullet points from the list */
+  margin-left: auto; /* Pushes the list to the right */
+}
+
+/* Step 10: Change the color of the a tag to grey and adjust text decoration */
+li {
+  color: grey;
+  text-decoration: none;
+  margin: 0 10px; /* Adds space between list items */
+}
+
+/* Step 11: Use hover property with a tag to change the color from grey to white */
+li:hover {
+  color: white;
+}
+
+/* Step 14: Select input tag and set width and padding */
+input {
+  width: 70%;
+  padding: 10px;
+  border-radius: 5px; /* Adds rounded corners */
+  border: 1px solid #ccc; /* Adds a light border */
+}
+
+/* Step 15: Select searchbar class and set text-align: center and also set padding */
+.searchbar {
+  text-align: center;
+  padding: 30px;
+}
+
+/* Step 22: Target box class, fix display, border, width, alignment */
+.box {
+  border: solid black 2px;
+  text-align: center;
+  width: 220px;
+  display: inline-block;
+  margin: 10px; /* Adds space between product boxes */
+  border-radius: 5px; /* Optional: Add rounded corners to the boxes */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Step 23: Fix image width */
+img {
+  width: 100%; /* Ensure image takes up 100% of the parent container's width */
+  height: auto; /* Maintain the aspect ratio of the image */
+  max-width: 220px; /* Limit the maximum width to 220px */
+  object-fit: cover; /* Ensures the image is cropped properly and fills the container */
+  border-top-left-radius: 5px; /* Rounded corners for the top left */
+  border-top-right-radius: 5px; /* Rounded corners for the top right */
+}
+
+/* Step 24: Set hover for box */
+.box:hover {
+  border-color: black;
+  background-color: black;
+  color: white;
+}
+
+/* Step 25: Select products class and set alignment to center and padding */
+.products {
+  text-align: center;
+  padding: 30px;
+  display: flex;
+  justify-content: center; /* Center the product boxes */
+  flex-wrap: wrap; /* Allow products to wrap to the next line on smaller screens */
+}
+
+/* Step 29: Make about text alignment center */
+.about {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Step 30: Set padding and width for p tag inside about */
+.about p {
+  padding: 20px;
+  font-size: larger;
+}
+
+/* Step 36: Select contact and set padding */
+.contact {
+  padding: 20px;
+}
+
+/* Step 37: Select footer and set bg color and text align center */
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
